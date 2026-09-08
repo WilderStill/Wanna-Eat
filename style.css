@@ -8,6 +8,8 @@
     --blue: #8ac6c2;
     --line: rgba(25, 37, 43, 0.16);
     --font-sans: "等线", DengXian, sans-serif;
+    --tracking-body: 0.02em;
+    --tracking-label: 0.1em;
 }
 
 * {
@@ -23,6 +25,7 @@ body {
     color: var(--ink);
     background: var(--cream);
     font-family: var(--font-sans);
+    letter-spacing: var(--tracking-body);
     line-height: 1.65;
 }
 
@@ -46,7 +49,7 @@ a {
     font-size: 1.15rem;
     font-weight: 700;
     gap: 12px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
 }
 
 .brand-mark {
@@ -61,7 +64,7 @@ a {
     font-size: 0.85rem;
     font-weight: 600;
     gap: 28px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
 }
 
 .nav-links a:hover {
@@ -83,7 +86,7 @@ a {
     color: var(--orange);
     font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: var(--tracking-label);
     text-transform: uppercase;
 }
 
@@ -93,7 +96,7 @@ h1, h2, h3, p {
 
 h1 {
     font-size: clamp(3.8rem, 8vw, 7.5rem);
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     line-height: 0.88;
     margin: 20px 0 28px;
 }
@@ -102,7 +105,7 @@ h1 span {
     color: var(--orange);
     display: block;
     font-size: 0.34em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     line-height: 1.5;
     margin-top: 25px;
 }
@@ -110,6 +113,7 @@ h1 span {
 .hero-copy {
     color: var(--muted);
     font-size: 1.1rem;
+    letter-spacing: 0.03em;
     max-width: 460px;
 }
 
@@ -120,6 +124,7 @@ h1 span {
     display: inline-block;
     font-size: 0.85rem;
     font-weight: 600;
+    letter-spacing: 0.04em;
     margin-top: 20px;
     padding: 12px 23px;
     transition: transform 180ms ease, background 180ms ease;
@@ -167,7 +172,7 @@ h1 span {
 
 h2 {
     font-size: clamp(2.1rem, 5vw, 4rem);
-    letter-spacing: -0.04em;
+    letter-spacing: -0.02em;
     line-height: 1;
     margin: 12px 0 0;
 }
@@ -240,7 +245,7 @@ h2 {
     color: var(--orange);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: var(--tracking-label);
 }
 
 .card h3 {

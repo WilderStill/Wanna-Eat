@@ -7,7 +7,7 @@
     --yellow: #f6c85f;
     --blue: #8ac6c2;
     --line: rgba(25, 37, 43, 0.16);
-    --font-sans: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --font-sans: "等线", DengXian, sans-serif;
 }
 
 * {

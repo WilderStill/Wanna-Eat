@@ -7,6 +7,7 @@
     --yellow: #f6c85f;
     --blue: #8ac6c2;
     --line: rgba(25, 37, 43, 0.16);
+    --font-sans: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 * {
@@ -21,8 +22,8 @@ body {
     margin: 0;
     color: var(--ink);
     background: var(--cream);
-    font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
-    line-height: 1.7;
+    font-family: var(--font-sans);
+    line-height: 1.65;
 }
 
 a {
@@ -43,9 +44,9 @@ a {
     align-items: center;
     display: flex;
     font-size: 1.15rem;
-    font-weight: 800;
+    font-weight: 700;
     gap: 12px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
 }
 
 .brand-mark {
@@ -58,9 +59,9 @@ a {
 .nav-links {
     display: flex;
     font-size: 0.85rem;
-    font-weight: 700;
+    font-weight: 600;
     gap: 28px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
 }
 
 .nav-links a:hover {
@@ -81,8 +82,8 @@ a {
 .eyebrow {
     color: var(--orange);
     font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.22em;
+    font-weight: 600;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
 }
 
@@ -92,7 +93,7 @@ h1, h2, h3, p {
 
 h1 {
     font-size: clamp(3.8rem, 8vw, 7.5rem);
-    letter-spacing: -0.08em;
+    letter-spacing: -0.05em;
     line-height: 0.88;
     margin: 20px 0 28px;
 }
@@ -101,7 +102,7 @@ h1 span {
     color: var(--orange);
     display: block;
     font-size: 0.34em;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.1em;
     line-height: 1.5;
     margin-top: 25px;
 }
@@ -118,7 +119,7 @@ h1 span {
     color: var(--paper);
     display: inline-block;
     font-size: 0.85rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 20px;
     padding: 12px 23px;
     transition: transform 180ms ease, background 180ms ease;
@@ -166,7 +167,7 @@ h1 span {
 
 h2 {
     font-size: clamp(2.1rem, 5vw, 4rem);
-    letter-spacing: -0.06em;
+    letter-spacing: -0.04em;
     line-height: 1;
     margin: 12px 0 0;
 }
@@ -238,8 +239,8 @@ h2 {
 .card-number {
     color: var(--orange);
     font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
 
 .card h3 {
@@ -276,7 +277,7 @@ h2 {
 
 .show-date {
     color: var(--yellow);
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .show-item p {

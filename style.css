@@ -1,12 +1,12 @@
 :root {
-    --ink: #19252b;
-    --muted: #617078;
-    --cream: #f7f1e7;
-    --paper: #fffdf8;
-    --orange: #f26b4f;
-    --yellow: #f6c85f;
-    --blue: #8ac6c2;
-    --line: rgba(25, 37, 43, 0.16);
+    --ink: #3a2638;
+    --muted: #796878;
+    --cream: #fff3f6;
+    --paper: #fffafd;
+    --orange: #e96d91;
+    --yellow: #ffd36e;
+    --blue: #9bd9d0;
+    --line: rgba(58, 38, 56, 0.16);
     --font-sans: "等线", DengXian, sans-serif;
     --tracking-body: 0.02em;
     --tracking-label: 0.1em;
@@ -23,7 +23,7 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    background: var(--cream);
+    background: var(--cream) radial-gradient(circle at 12% 12%, rgba(255, 211, 110, 0.28) 0 3px, transparent 4px) 0 0 / 34px 34px;
     font-family: var(--font-sans);
     letter-spacing: var(--tracking-body);
     line-height: 1.65;
@@ -41,6 +41,8 @@ a {
     margin: 0 auto;
     max-width: 1180px;
     padding: 24px 28px;
+    position: relative;
+    z-index: 1;
 }
 
 .brand {
@@ -53,10 +55,12 @@ a {
 }
 
 .brand-mark {
-    background: var(--ink);
+    background: var(--orange);
+    border: 3px solid var(--paper);
     border-radius: 50%;
-    height: 13px;
-    width: 13px;
+    box-shadow: 0 0 0 2px var(--orange);
+    height: 12px;
+    width: 12px;
 }
 
 .nav-links {
@@ -80,6 +84,7 @@ a {
     max-width: 1180px;
     min-height: 680px;
     padding: 70px 28px 110px;
+    position: relative;
 }
 
 .eyebrow {
@@ -99,6 +104,7 @@ h1 {
     letter-spacing: -0.03em;
     line-height: 0.88;
     margin: 20px 0 28px;
+    text-shadow: 4px 4px 0 rgba(255, 211, 110, 0.7);
 }
 
 h1 span {
@@ -118,7 +124,7 @@ h1 span {
 }
 
 .button {
-    background: var(--ink);
+    background: var(--orange);
     border-radius: 999px;
     color: var(--paper);
     display: inline-block;
@@ -127,18 +133,20 @@ h1 span {
     letter-spacing: 0.04em;
     margin-top: 20px;
     padding: 12px 23px;
-    transition: transform 180ms ease, background 180ms ease;
+    transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
 .button:hover {
-    background: var(--orange);
+    background: var(--ink);
+    box-shadow: 4px 4px 0 var(--yellow);
     transform: translateY(-3px);
 }
 
 .hero-art {
     background: var(--yellow);
     border-radius: 48% 52% 42% 58% / 55% 42% 58% 45%;
-    box-shadow: 18px 22px 0 var(--blue);
+    border: 3px solid var(--paper);
+    box-shadow: 18px 22px 0 var(--blue), 0 0 0 5px var(--orange);
     margin: 0 auto;
     max-width: 440px;
     padding: 27px;
@@ -178,7 +186,9 @@ h2 {
 }
 
 .about {
-    background: var(--paper);
+    background: rgba(255, 250, 253, 0.9);
+    border-bottom: 1px dashed var(--orange);
+    border-top: 1px dashed var(--orange);
 }
 
 .about-grid {
@@ -230,8 +240,9 @@ h2 {
 }
 
 .card {
-    border: 1px solid var(--line);
-    border-radius: 22px;
+    background: var(--paper);
+    border: 2px solid var(--line);
+    border-radius: 18px 24px 20px 28px;
     padding: 28px;
     transition: transform 180ms ease, box-shadow 180ms ease;
 }
@@ -259,7 +270,7 @@ h2 {
 }
 
 .show {
-    background: var(--ink);
+    background: var(--ink) linear-gradient(135deg, rgba(233, 109, 145, 0.22), transparent 45%);
     color: var(--paper);
 }
 
@@ -292,6 +303,8 @@ h2 {
 
 footer {
     background: var(--orange);
+    background-image: radial-gradient(rgba(255, 250, 253, 0.22) 1px, transparent 1px);
+    background-size: 12px 12px;
     color: var(--paper);
     padding: 42px 28px;
 }

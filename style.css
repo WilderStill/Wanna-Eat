@@ -1,14 +1,14 @@
 :root {
-    --ink: #3a2638;
-    --muted: #796878;
-    --cream: #fff3f6;
-    --paper: #fffafd;
-    --orange: #e96d91;
-    --yellow: #ffd36e;
-    --blue: #9bd9d0;
-    --line: rgba(58, 38, 56, 0.16);
-    --gold: #d89b48;
-    --glass: rgba(255, 250, 253, 0.78);
+    --ink: #f8eaf1;
+    --muted: #bda9b8;
+    --cream: #171321;
+    --paper: #251b2c;
+    --orange: #e779a0;
+    --yellow: #f4c76a;
+    --blue: #76bdb9;
+    --line: rgba(248, 234, 241, 0.2);
+    --gold: #d6a052;
+    --glass: rgba(37, 27, 44, 0.82);
     --font-sans: "等线", DengXian, sans-serif;
     --tracking-body: 0.02em;
     --tracking-label: 0.1em;
@@ -26,9 +26,9 @@ body {
     margin: 0;
     color: var(--ink);
     background:
-        linear-gradient(135deg, rgba(155, 217, 208, 0.18), transparent 32%),
-        linear-gradient(315deg, rgba(233, 109, 145, 0.12), transparent 38%),
-        var(--cream) radial-gradient(circle at 12% 12%, rgba(255, 211, 110, 0.28) 0 3px, transparent 4px) 0 0 / 34px 34px;
+        linear-gradient(135deg, rgba(118, 189, 185, 0.12), transparent 32%),
+        linear-gradient(315deg, rgba(231, 121, 160, 0.14), transparent 38%),
+        var(--cream) radial-gradient(circle at 12% 12%, rgba(244, 199, 106, 0.2) 0 2px, transparent 3px) 0 0 / 34px 34px;
     font-family: var(--font-sans);
     letter-spacing: var(--tracking-body);
     line-height: 1.65;
@@ -262,7 +262,7 @@ h1 span {
 .hero-art {
     background: var(--yellow);
     border-radius: 48% 52% 42% 58% / 55% 42% 58% 45%;
-    border: 3px solid var(--paper);
+    border: 3px solid var(--ink);
     box-shadow: 18px 22px 0 var(--blue), 0 0 0 5px var(--orange), 0 0 0 8px rgba(216, 155, 72, 0.35);
     margin: 0 auto;
     max-width: 440px;
@@ -371,7 +371,7 @@ h2::after {
 }
 
 .card {
-    background: linear-gradient(145deg, rgba(255, 250, 253, 0.95), rgba(255, 243, 246, 0.72));
+    background: linear-gradient(145deg, rgba(45, 32, 53, 0.95), rgba(37, 27, 44, 0.78));
     border: 2px solid var(--line);
     border-radius: 18px 24px 20px 28px;
     padding: 28px;
@@ -469,7 +469,7 @@ h2::after {
 
 footer {
     background: var(--orange);
-    background-image: radial-gradient(rgba(255, 250, 253, 0.22) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(248, 234, 241, 0.18) 1px, transparent 1px);
     background-size: 12px 12px;
     border-top: 3px solid var(--yellow);
     color: var(--paper);
